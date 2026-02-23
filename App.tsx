@@ -17,6 +17,7 @@ import {
   Tag
 } from 'lucide-react';
 import { SERVICES, FAQ, BENEFITS, ADS_METHOD } from './constants';
+import foto from './foto.png';
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -101,8 +102,8 @@ const App: React.FC = () => {
 
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 grayscale-[0.2] hover:grayscale-0 transition-all duration-700 shadow-xl">
-              <img 
-                src="./perfil.jpg" 
+              <img
+                src={foto}
                 className="w-full h-full object-cover"
                 alt="Felipe B. - Especialista"
                 onError={(e) => {
